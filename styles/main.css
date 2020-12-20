@@ -293,11 +293,17 @@ header .header_items_burger {
           justify-content: space-between;
 }
 
-.donation .row {
-  margin: 0;
+.donation_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .donation_block {
+  width: 49%;
   height: 400px;
   background-color: #212529;
   display: -webkit-box;
@@ -639,7 +645,11 @@ footer .footer_info a {
     min-height: 200px;
     padding-top: 20px;
   }
+  .donation_items {
+    display: block;
+  }
   .donation_block {
+    width: 100%;
     height: 200px;
   }
   .play iframe {

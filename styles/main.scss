@@ -238,11 +238,15 @@ header {
     width: 100%;
     justify-content: space-between;
   }
-  .row {
-    margin: 0;
+  // .row {
+  //   margin: 0;
+  // }
+  &_items {
+    display: flex;
+    justify-content: space-between;
   }
   &_block {
-    // width: 49%;
+    width: 49%;
     height: 400px;
     background-color: $dark;
     // position: absolute;
@@ -528,7 +532,11 @@ footer {
     padding-top: 20px;
   }
   .donation {
+    &_items {
+      display: block;
+    }
     &_block {
+      width: 100%;
       height: 200px;
     }
   }
