@@ -111,7 +111,7 @@ header .header_items_burger {
 
 .subheader .social {
   margin: 40px auto 0;
-  width: 180px;
+  width: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,10 +137,10 @@ header .header_items_burger {
 
 .subheader .social_item .fb,
 .subheader .social_item .insta,
-.subheader .social_item .youtube {
+.subheader .social_item .youtube,
+.subheader .social_item .soundcloud {
   fill: white;
   width: 30px;
-  height: 30px;
 }
 
 .subheader .social_item:hover {
@@ -157,6 +157,10 @@ header .header_items_burger {
 
 .subheader .social_item:hover .insta {
   fill: url(#brand-gradient);
+}
+
+.subheader .social_item:hover .soundcloud {
+  fill: #ff3300;
 }
 
 .slider {
@@ -435,6 +439,13 @@ header .header_items_burger {
   background-color: white;
 }
 
+.aplicant_title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .aplicant_wrapper {
   padding: 30px;
   width: 100%;
@@ -444,7 +455,7 @@ header .header_items_burger {
 
 .aplicant_form {
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
   font-size: 18px;
 }
@@ -551,7 +562,7 @@ header .header_items_burger {
 }
 
 footer {
-  min-height: 80px;
+  min-height: 90px;
   background-color: #212529;
   color: white;
   font-weight: bold;
@@ -559,7 +570,7 @@ footer {
 }
 
 footer .footer_info {
-  height: 80px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,6 +584,11 @@ footer .footer_info {
 
 footer .footer_info a {
   color: white;
+}
+
+footer .footer_info .phone,
+footer .footer_info .mail {
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -740,6 +756,33 @@ footer .footer_info a {
   }
   .subheader_title {
     font-size: 50px;
+  }
+  .subheader .social {
+    width: 200px;
+  }
+  .subheader .social_item {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+  }
+  .subheader .social_item .fb,
+  .subheader .social_item .insta,
+  .subheader .social_item .youtube,
+  .subheader .social_item .soundcloud {
+    fill: white;
+    width: 25px;
+  }
+  .subheader .social_item .fb {
+    fill: #4267b2;
+  }
+  .subheader .social_item .youtube {
+    fill: #ff0000;
+  }
+  .subheader .social_item .insta {
+    fill: url(#brand-gradient);
+  }
+  .subheader .social_item .soundcloud {
+    fill: #ff3300;
   }
   .slider_arrow {
     width: 30px;

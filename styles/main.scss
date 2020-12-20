@@ -92,7 +92,7 @@ header {
   }
   .social {
     margin: 40px auto 0;
-    width: 180px;
+    width: 230px;
     display: flex;
     justify-content: space-around;
     &_item {
@@ -105,10 +105,10 @@ header {
       align-items: center;
       .fb,
       .insta,
-      .youtube {
+      .youtube,
+      .soundcloud {
         fill: white;
         width: 30px;
-        height: 30px;
       }
       &:hover {
         background-color: white;
@@ -120,6 +120,9 @@ header {
         }
         .insta {
           fill: url(#brand-gradient);
+        }
+        .soundcloud {
+          fill: #ff3300;
         }
       }
     }
@@ -343,6 +346,12 @@ header {
   padding: 50px 0;
   min-height: 500px;
   background-color: $light;
+  &_title {
+    color: $light;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
   &_wrapper {
     padding: 30px;
     width: 100%;
@@ -351,7 +360,7 @@ header {
   }
   &_form {
     width: 60%;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
     font-size: 18px;
     input,
@@ -439,18 +448,22 @@ header {
   }
 }
 footer {
-  min-height: 80px;
+  min-height: 90px;
   background-color: $dark;
   color: white;
   font-weight: bold;
   font-size: 14px;
   .footer_info {
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     a {
       color: white;
+    }
+    .phone,
+    .mail {
+      font-size: 12px;
     }
   }
 }
@@ -617,6 +630,33 @@ footer {
     min-height: 400px;
     &_title {
       font-size: 50px;
+    }
+    .social {
+      width: 200px;
+      &_item {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        .fb,
+        .insta,
+        .youtube,
+        .soundcloud {
+          fill: white;
+          width: 25px;
+        }
+        .fb {
+          fill: #4267b2;
+        }
+        .youtube {
+          fill: #ff0000;
+        }
+        .insta {
+          fill: url(#brand-gradient);
+        }
+        .soundcloud {
+          fill: #ff3300;
+        }
+      }
     }
   }
   .slider {
