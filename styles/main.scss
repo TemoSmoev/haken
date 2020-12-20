@@ -572,13 +572,13 @@ footer {
 }
 @media only screen and (max-width: 575px) {
   header {
-    height: 40px;
+    height: 50px;
     .header_items {
       display: flex;
       justify-content: space-between;
-      height: 40px;
+      height: 50px;
       img {
-        width: 25px;
+        width: 30px;
       }
       &_menu {
         transition: left 0.5s ease-in-out;
@@ -605,10 +605,10 @@ footer {
         padding: 10px;
         display: block;
         div {
-          width: 15px;
-          height: 2px;
+          width: 25px;
+          height: 3px;
           background-color: rgb(255, 255, 255);
-          margin-top: 3px;
+          margin-top: 5px;
         }
         div:nth-child(1) {
           margin-top: 0;
@@ -636,25 +636,11 @@ footer {
       &_item {
         width: 40px;
         height: 40px;
-        background-color: white;
         .fb,
         .insta,
         .youtube,
         .soundcloud {
-          fill: white;
           width: 25px;
-        }
-        .fb {
-          fill: #4267b2;
-        }
-        .youtube {
-          fill: #ff0000;
-        }
-        .insta {
-          fill: url(#brand-gradient);
-        }
-        .soundcloud {
-          fill: #ff3300;
         }
       }
     }

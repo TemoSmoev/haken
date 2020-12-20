@@ -685,7 +685,7 @@ footer .footer_info .mail {
 
 @media only screen and (max-width: 575px) {
   header {
-    height: 40px;
+    height: 50px;
   }
   header .header_items {
     display: -webkit-box;
@@ -694,10 +694,10 @@ footer .footer_info .mail {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 40px;
+    height: 50px;
   }
   header .header_items img {
-    width: 25px;
+    width: 30px;
   }
   header .header_items_menu {
     -webkit-transition: left 0.5s ease-in-out;
@@ -731,10 +731,10 @@ footer .footer_info .mail {
     display: block;
   }
   header .header_items_burger div {
-    width: 15px;
-    height: 2px;
+    width: 25px;
+    height: 3px;
     background-color: white;
-    margin-top: 3px;
+    margin-top: 5px;
   }
   header .header_items_burger div:nth-child(1) {
     margin-top: 0;
@@ -763,26 +763,12 @@ footer .footer_info .mail {
   .subheader .social_item {
     width: 40px;
     height: 40px;
-    background-color: white;
   }
   .subheader .social_item .fb,
   .subheader .social_item .insta,
   .subheader .social_item .youtube,
   .subheader .social_item .soundcloud {
-    fill: white;
     width: 25px;
-  }
-  .subheader .social_item .fb {
-    fill: #4267b2;
-  }
-  .subheader .social_item .youtube {
-    fill: #ff0000;
-  }
-  .subheader .social_item .insta {
-    fill: url(#brand-gradient);
-  }
-  .subheader .social_item .soundcloud {
-    fill: #ff3300;
   }
   .slider_arrow {
     width: 30px;
