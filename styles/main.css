@@ -823,5 +823,8 @@ footer .footer_info .mail {
   footer {
     font-size: 13px;
   }
+  .mhd {
+    pointer-events: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

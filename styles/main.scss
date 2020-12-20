@@ -573,6 +573,7 @@ footer {
 @media only screen and (max-width: 575px) {
   header {
     height: 50px;
+    // background-color: rgba(15, 15, 15, 0.9);
     .header_items {
       display: flex;
       justify-content: space-between;
@@ -706,5 +707,8 @@ footer {
   }
   footer {
     font-size: 13px;
+  }
+  .mhd {
+    pointer-events: none;
   }
 }
