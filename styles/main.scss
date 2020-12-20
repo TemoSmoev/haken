@@ -1,4 +1,5 @@
 $light: #e1e1e1;
+$light: white;
 $dark: #1a1a1a;
 $dark: #212529;
 @font-face {
@@ -46,14 +47,34 @@ body {
   }
 }
 header {
-  height: 100px;
-  background-color: $dark;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  background-color: #0f0f0f;
+  // background-color: $light;
   .header_items {
-    height: 100px;
+    // display: flex;
+    // justify-content: space-between;
+    height: 60px;
     display: flex;
     align-items: center;
     img {
-      width: 80px;
+      width: 40px;
+    }
+    &_menu {
+      margin-left: 300px;
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    &_burger {
+      display: none;
     }
   }
 }
@@ -105,8 +126,8 @@ header {
   }
 }
 .slider {
-  padding-top: 100px;
-  min-height: 500px;
+  padding: 50px 0;
+  // min-height: 500px;
   background-color: $light;
 
   &_wrapper {
@@ -115,7 +136,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    // padding: 0 40px;
   }
   &_arrow {
     margin: 0 20px;
@@ -166,9 +187,9 @@ header {
   // background-color: black;
   img {
     position: relative;
-    width: 350px;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    // top: 50%;
+    // transform: translateY(-50%);
   }
   &::after {
     content: "";
@@ -205,6 +226,7 @@ header {
 .video {
   margin: 0;
   margin-top: 30px;
+  margin-right: 10px;
 }
 .donation {
   // padding-top: 100px;
@@ -313,7 +335,7 @@ header {
     }
   }
 }
-.applicant {
+.aplicant {
   padding: 50px 0;
   min-height: 500px;
   background-color: $light;
@@ -442,7 +464,14 @@ footer {
   textarea::-webkit-scrollbar {
     width: 5px;
   }
-
+  header {
+    .header_items {
+      &_menu {
+        margin-left: 100px;
+        width: 60%;
+      }
+    }
+  }
   .about {
     padding: 40px 0;
     &_wrapper {
@@ -474,13 +503,22 @@ footer {
       width: 250px;
     }
   }
-  .applicant {
+  .aplicant {
     &_form {
       width: 80%;
     }
   }
 }
 @media only screen and (max-width: 767px) {
+  header {
+    .header_items {
+      &_menu {
+        font-size: 13px;
+        margin-left: 50px;
+        width: 80%;
+      }
+    }
+  }
   .subheader {
     min-height: 500px;
     padding-top: 80px;
@@ -512,6 +550,51 @@ footer {
   }
 }
 @media only screen and (max-width: 575px) {
+  header {
+    height: 40px;
+    .header_items {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      img {
+        width: 25px;
+      }
+      &_menu {
+        transition: left 0.5s ease-in-out;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 60%;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        a {
+          font-size: 15px;
+          margin-top: 30px;
+          margin-left: 20px;
+        }
+        &.active {
+          left: 0;
+        }
+      }
+      &_burger {
+        padding: 10px;
+        display: block;
+        div {
+          width: 15px;
+          height: 2px;
+          background-color: rgb(255, 255, 255);
+          margin-top: 3px;
+        }
+        div:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
   .videos {
     select {
       margin: 0 auto;
@@ -528,6 +611,16 @@ footer {
       font-size: 50px;
     }
   }
+  .slider {
+    &_arrow {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 15px;
+      }
+    }
+  }
+  .slider_item,
   .video {
     margin-top: 20px;
     width: 250px;
@@ -559,7 +652,7 @@ footer {
       }
     }
   }
-  .applicant {
+  .aplicant {
     &_form {
       font-size: 13px;
       .submit {

@@ -4,26 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/images/logo_dark.svg" />
+    <link rel="stylesheet" href="styles/splide.min.css" />
     <link rel="stylesheet" href="styles/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="styles/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/splide.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/videos.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/scroll.js"></script>
     <title>Haken</title>
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="container">
         <div class="header_items">
           <img src="assets/images/logo_light.svg" alt="haken,ჰაკენი" />
+          <div class="header_items_menu">
+            <a href="#about" class="menu_item smooth">ჩვენს შესახებ</a>
+            <a href="#videos" class="menu_item smooth">ყველა ვიდეო</a>
+            <a href="#donation" class="menu_item smooth">დონაცია</a>
+            <a href="#aplicant" class="menu_item smooth">აპლიკაცია</a>
+          </div>
+          <div class="header_items_burger">
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+          </div>
         </div>
       </div>
-    </header> -->
-    <!-- <section class="menu">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </section> -->
+    </header>
+    <!-- <div class="sidemenu">
+
+    </div> -->
     <section class="subheader">
       <div class="container">
         <div class="subheader_title">გაავრცელე ამონახსნი</div>
@@ -75,39 +88,46 @@
       </div>
     </section>
     <section class="slider">
-      <div class="slider_wrapper">
-        <div class="slider_arrow" id="arrow-left"><img src="assets/images/left-arrow.svg" alt="arrow" /></div>
-        <div class="slider_container">
-          <div class="slider_track">
-            <div class="slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
-              <img src="assets/images/speaker.jpg" />
-            </div>
-            <div class="slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
-              <img src="assets/images/speaker.jpg" />
-            </div>
-            <div class="slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
-              <img src="assets/images/speaker.jpg" />
-            </div>
-            <div class="slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
-              <img src="assets/images/speaker.jpg" />
-            </div>
-            <div class="slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
-              <img src="assets/images/speaker.jpg" />
-            </div>
-            <div class="slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
-              <img src="assets/images/speaker.jpg" />
-            </div>
+      <div class="splide">
+        <div class="container">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              <div class="splide__slide slider_item" data-url="https://www.youtube.com/embed/RoAWK9wHDms">
+                <img src="assets/images/speaker.jpg" />
+              </div>
+              
+            </ul>
           </div>
         </div>
-        <div class="slider_arrow" id="arrow-right"><img src="assets/images/right-arrow.svg" alt="arrow" /></div>
       </div>
     </section>
-    <section class="donation">
+    <section id="donation" class="donation">
       <!-- <div class="container"> -->
       <!-- <div class="donation_wrapper"> -->
       <div class="row">
         <div class="col-md-5 donation_block block1">
-          <a href="#applicant" class="application_link">
+          <a href="#aplicant" class="smooth">
             <div class="donation_block_item">აპლიკაცია</div>
           </a>
         </div>
@@ -118,7 +138,7 @@
       <!-- </div> -->
       <!-- </div> -->
     </section>
-    <section class="videos">
+    <section id="videos" class="videos">
       <div class="container">
         <select name="category" class="category">
           <option value="all">ყველა</option>
@@ -130,7 +150,7 @@
         <button class="more ">მეტის ნახვა</button>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="about_wrapper">
           <div class="logo">
@@ -152,10 +172,10 @@
         </div>
       </div>
     </section>
-    <section id="applicant" class="applicant">
+    <section id="aplicant" class="aplicant">
       <div class="container">
-        <div class="applicant_wrapper">
-          <form class="applicant_form">
+        <div class="aplicant_wrapper">
+          <form class="aplicant_form">
             <div class="row">
               <input class=".col-sm-12 col-md-6" name="name" placeholder="სახელი და გვარი" />
               <input class=".col-sm-12 col-md-5 offset-md-1" name="mobile" placeholder="მობილური" />
@@ -171,7 +191,7 @@
     <footer>
       <div class="container">
         <div class="footer_info">
-          <div class="copy">COPYRIGHT &copy Haken &#9702 ჰაკენ</div>
+          <div class="copy">&copy Haken &#9702 ჰაკენ</div>
           <div class="contact ">
             <div class="title">კონტაქტი:</div>
             <div class="mail"><a href = "mailto: hakentalk@gmail.com">hakentalk@gmail.com</a></div>
@@ -189,9 +209,20 @@
       </div>
     </div>
 
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/videos.js"></script>
-    <script src="scripts/form.js"></script>
-    <script src="scripts/scroll.js"></script>
+    
+    <script>
+      document.querySelector('.header_items_burger').addEventListener('click',function(e){
+        document.querySelector('.header_items_menu').classList.toggle('active')
+        e.stopPropagation()
+      })
+      document.querySelectorAll('.menu_item').forEach((m) => {
+        m.addEventListener("click", () => {
+          document.querySelector('.header_items_menu').classList.remove("active");
+        });
+      });
+      document.addEventListener("click", (e) => {
+        document.querySelector('.header_items_menu').classList.remove("active");
+      });
+    </script>
   </body>
 </html>

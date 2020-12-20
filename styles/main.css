@@ -23,7 +23,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: #e1e1e1;
+  background-color: white;
 }
 
 body {
@@ -52,12 +52,16 @@ body {
 }
 
 header {
-  height: 100px;
-  background-color: #212529;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  background-color: #0f0f0f;
 }
 
 header .header_items {
-  height: 100px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +71,27 @@ header .header_items {
 }
 
 header .header_items img {
-  width: 80px;
+  width: 40px;
+}
+
+header .header_items_menu {
+  margin-left: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+header .header_items_menu a {
+  color: white;
+  text-decoration: none;
+}
+
+header .header_items_burger {
+  display: none;
 }
 
 .subheader {
@@ -136,9 +160,8 @@ header .header_items img {
 }
 
 .slider {
-  padding-top: 100px;
-  min-height: 500px;
-  background-color: #e1e1e1;
+  padding: 50px 0;
+  background-color: white;
 }
 
 .slider_wrapper {
@@ -153,7 +176,6 @@ header .header_items img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 40px;
 }
 
 .slider_arrow {
@@ -205,10 +227,7 @@ header .header_items img {
 .slider_item img,
 .video img {
   position: relative;
-  width: 350px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 100%;
 }
 
 .slider_item::after,
@@ -255,11 +274,12 @@ header .header_items img {
 .video {
   margin: 0;
   margin-top: 30px;
+  margin-right: 10px;
 }
 
 .donation {
   height: 400px;
-  background-color: #e1e1e1;
+  background-color: white;
   position: relative;
 }
 
@@ -320,7 +340,7 @@ header .header_items img {
 
 .videos {
   min-height: 500px;
-  background-color: #e1e1e1;
+  background-color: white;
   padding: 50px 0;
 }
 
@@ -389,7 +409,7 @@ header .header_items img {
 
 .about_us {
   width: 600px;
-  color: #e1e1e1;
+  color: white;
 }
 
 .about_us_title {
@@ -403,50 +423,50 @@ header .header_items img {
   font-size: 18px;
 }
 
-.applicant {
+.aplicant {
   padding: 50px 0;
   min-height: 500px;
-  background-color: #e1e1e1;
+  background-color: white;
 }
 
-.applicant_wrapper {
+.aplicant_wrapper {
   padding: 30px;
   width: 100%;
   margin: 0 auto;
   background-color: #212529;
 }
 
-.applicant_form {
+.aplicant_form {
   width: 60%;
   margin: 0 auto;
   position: relative;
   font-size: 18px;
 }
 
-.applicant_form input,
-.applicant_form textarea {
+.aplicant_form input,
+.aplicant_form textarea {
   outline: none;
-  border: 2px solid #e1e1e1;
-  color: #e1e1e1;
+  border: 2px solid white;
+  color: white;
   background-color: transparent;
   margin-bottom: 20px;
   height: 50px;
 }
 
-.applicant_form input.error,
-.applicant_form textarea.error {
+.aplicant_form input.error,
+.aplicant_form textarea.error {
   border: 2px solid #ff0023;
 }
 
-.applicant_form textarea {
+.aplicant_form textarea {
   height: 100px;
   padding-top: 10px;
 }
 
-.applicant_form .submit {
+.aplicant_form .submit {
   border: none;
   outline: none;
-  background-color: #e1e1e1;
+  background-color: white;
   height: 60px;
   font-weight: bold;
   color: #212529;
@@ -513,7 +533,7 @@ header .header_items img {
   border: none;
   outline: none;
   background-color: #212529;
-  color: #e1e1e1;
+  color: white;
   width: 30%;
   height: 20%;
   font-weight: bold;
@@ -564,6 +584,10 @@ footer .footer_info a {
   textarea::-webkit-scrollbar {
     width: 5px;
   }
+  header .header_items_menu {
+    margin-left: 100px;
+    width: 60%;
+  }
   .about {
     padding: 40px 0;
   }
@@ -596,12 +620,17 @@ footer .footer_info a {
   .video img {
     width: 250px;
   }
-  .applicant_form {
+  .aplicant_form {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  header .header_items_menu {
+    font-size: 13px;
+    margin-left: 50px;
+    width: 80%;
+  }
   .subheader {
     min-height: 500px;
     padding-top: 80px;
@@ -629,6 +658,61 @@ footer .footer_info a {
 }
 
 @media only screen and (max-width: 575px) {
+  header {
+    height: 40px;
+  }
+  header .header_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 40px;
+  }
+  header .header_items img {
+    width: 25px;
+  }
+  header .header_items_menu {
+    -webkit-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header_items_menu a {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  header .header_items_menu.active {
+    left: 0;
+  }
+  header .header_items_burger {
+    padding: 10px;
+    display: block;
+  }
+  header .header_items_burger div {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
+  }
+  header .header_items_burger div:nth-child(1) {
+    margin-top: 0;
+  }
   .videos {
     padding: 20px 0;
   }
@@ -647,10 +731,19 @@ footer .footer_info a {
   .subheader_title {
     font-size: 50px;
   }
+  .slider_arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .slider_arrow img {
+    width: 15px;
+  }
+  .slider_item,
   .video {
     margin-top: 20px;
     width: 250px;
   }
+  .slider_item img,
   .video img {
     width: 250px;
   }
@@ -672,10 +765,10 @@ footer .footer_info a {
   .about_us_text {
     font-size: 13px;
   }
-  .applicant_form {
+  .aplicant_form {
     font-size: 13px;
   }
-  .applicant_form .submit {
+  .aplicant_form .submit {
     font-size: 18px;
   }
   .popup {
