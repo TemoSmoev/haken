@@ -215,12 +215,12 @@
         document.querySelector('.header_items_menu').classList.toggle('active')
         e.stopPropagation()
       })
-      document.querySelectorAll('.menu_item').forEach((m) => {
-        m.addEventListener("click", () => {
+      document.querySelectorAll('.menu_item').forEach(function(m){
+        m.addEventListener("click", function(){
           document.querySelector('.header_items_menu').classList.remove("active");
         });
       });
-      document.addEventListener("click", (e) => {
+      document.addEventListener("click", function () {
         document.querySelector('.header_items_menu').classList.remove("active");
       });
     </script>
