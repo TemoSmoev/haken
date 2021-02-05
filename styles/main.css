@@ -354,13 +354,47 @@ header .header_items_burger {
   padding: 50px 0;
 }
 
-.videos select {
+.videos .filter {
+  margin: 0 auto;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.videos .filter_category {
   display: block;
   background-color: #212529;
   color: white;
+  width: 100px;
   padding: 5px;
   outline: none;
   border: none;
+  height: 35px;
+}
+
+.videos .filter_input {
+  display: block;
+  outline: none;
+  padding-left: 5px;
+  border: 2px solid #212529;
+  color: #212529;
+  background-color: transparent;
+  height: 35px;
+}
+
+.videos .filter_search {
+  display: block;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: #212529;
+  height: 35px;
+  font-weight: bold;
+  color: white;
 }
 
 .videos_list {
@@ -742,9 +776,30 @@ footer .footer_info .mail {
   .videos {
     padding: 20px 0;
   }
-  .videos select {
-    margin: 0 auto;
+  .videos .video {
+    margin-right: 0;
+  }
+  .videos .filter {
     font-size: 13px;
+    height: 75px;
+    width: 250px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .videos .filter_category {
+    height: 30px;
+  }
+  .videos .filter_input {
+    height: 30px;
+    width: 120px;
+  }
+  .videos .filter_search {
+    width: 250px;
   }
   .videos_list {
     -webkit-box-pack: center;

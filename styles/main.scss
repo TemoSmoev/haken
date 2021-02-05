@@ -280,14 +280,40 @@ header {
   min-height: 500px;
   background-color: $light;
   padding: 50px 0;
-  select {
-    display: block;
-    background-color: $dark;
-    color: white;
-    // width: 100px;
-    padding: 5px;
-    outline: none;
-    border: none;
+  .filter {
+    margin: 0 auto;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    &_category {
+      display: block;
+      background-color: $dark;
+      color: white;
+      width: 100px;
+      padding: 5px;
+      outline: none;
+      border: none;
+      height: 35px;
+    }
+    &_input {
+      display: block;
+      outline: none;
+      padding-left: 5px;
+      border: 2px solid $dark;
+      color: $dark;
+      background-color: transparent;
+      height: 35px;
+    }
+    &_search {
+      display: block;
+      width: 150px;
+      border: none;
+      outline: none;
+      background-color: $dark;
+      height: 35px;
+      font-weight: bold;
+      color: $light;
+    }
   }
   &_list {
     display: flex;
@@ -618,9 +644,30 @@ footer {
     }
   }
   .videos {
-    select {
-      margin: 0 auto;
+    // select {
+    //   margin: 0 auto;
+    //   font-size: 13px;
+    // }
+    .video {
+      margin-right: 0;
+    }
+    .filter {
       font-size: 13px;
+      height: 75px;
+      width: 250px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      &_category {
+        height: 30px;
+      }
+      &_input {
+        height: 30px;
+        width: 120px;
+      }
+      &_search {
+        width: 250px;
+      }
     }
     padding: 20px 0;
     &_list {

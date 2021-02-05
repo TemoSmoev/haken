@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ადგილი, სადაც გვაინტერესებს შენი ნააზრევი" />
+    <meta name="keywords" content="haken,ჰაკენ,ჰაკენი,აღმოჩენა,ნააზრევი,ამონახსნი,აზრი,მიგნება,გაავრცელე" />
     <link rel="icon" href="assets/images/logo_dark.svg" />
     <link rel="stylesheet" href="styles/splide.min.css" />
     <link rel="stylesheet" href="styles/bootstrap-grid.min.css" />
@@ -13,7 +15,7 @@
     <script src="scripts/videos.js"></script>
     <script src="scripts/form.js"></script>
     <script src="scripts/scroll.js"></script>
-    <title>Haken</title>
+    <title>Haken | გაავრცელე ამონახსნი</title>
   </head>
   <body>
     <header>
@@ -149,12 +151,16 @@
     </section>
     <section id="videos" class="videos">
       <div class="container">
-        <select name="category" class="category">
-          <option value="all">ყველა</option>
-          <option value="science">მეცნიერება</option>
-          <option value="art">ხელოვნება</option>
-          <option value="religion">რელიგია</option>
-        </select>
+        <div class="filter">
+          <select name="category" class="filter_category">
+            <option value="all">ყველა</option>
+            <option value="science">მეცნიერება</option>
+            <option value="art">ხელოვნება</option>
+            <option value="religion">რელიგია</option>
+          </select>
+          <input placeholder="საძიებო სიტყვა" class="filter_input"/>
+          <button class="filter_search">ძიება</button>
+        </div>
         <div class="videos_list"></div>
         <button class="more ">მეტის ნახვა</button>
       </div>
