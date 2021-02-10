@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             show(errorPopup)
           }
         )
-        .then(() => {
+        .then(function () {
           show(submitButton)
           hide(submitLoader)
         })
