@@ -163,7 +163,7 @@
         </div>
         <div class="videos_container">
           <div class="videos_list"></div>
-          <div id="loading"></div>
+          <div class="loading videosLoading"></div>
           <div class="videos_not_found">
             ვიდეოების მოძებნა ვერ მოხერხდა
           </div>
@@ -202,11 +202,12 @@
           <form class="aplicant_form">
             <div class="row">
               <input class=".col-sm-12 col-md-6" name="name" placeholder="სახელი და გვარი" />
-              <input class=".col-sm-12 col-md-5 offset-md-1" name="mobile" placeholder="მობილური" />
+              <input class=".col-sm-12 col-md-5 offset-md-1" name="phoneNumber" placeholder="მობილური" />
               <textarea class="col-md-12" name="about" placeholder="თქვენ შესახებ"></textarea>
               <input class="col-md-12" name="title" placeholder="თემის სახელწოდება" />
               <textarea class="col-md-12" name="summary" placeholder="თემის მოკლე შინაარსი"></textarea>
-              <button class="col-md-12 submit">გაგზავნა</button>
+              <button class="col-md-12 submit active">გაგზავნა</button>
+              <div class="loading submitLoader"></div>
             </div>
           </form>
         </div>
@@ -226,10 +227,17 @@
       </div>
     </footer>
     <div class="play"></div>
-    <div class="popup">
+    <div class="popup success">
       <div class="popup_window">
         <div class="popup_title">მადლობა თქვენი აპლიკაციისთვის</div>
         <div class="popup_message">დაინტერესების შემთხვევაში აუცილებლად დაგიკავშირდებით</div>
+        <button class="popup_button">დახურვა</button>
+      </div>
+    </div>
+    <div class="popup error">
+      <div class="popup_window">
+        <div class="popup_title">მოხდა შეცდომა</div>
+        <div class="popup_message">გთხოვთ, სცადოთ მოგვიანებით</div>
         <button class="popup_button">დახურვა</button>
       </div>
     </div>

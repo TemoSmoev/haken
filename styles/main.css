@@ -535,12 +535,17 @@ header .header_items_burger {
 }
 
 .aplicant_form .submit {
+  display: none;
   border: none;
   outline: none;
   background-color: white;
   height: 60px;
   font-weight: bold;
   color: #212529;
+}
+
+.aplicant_form .submit.active {
+  display: block;
 }
 
 .play {
@@ -609,6 +614,14 @@ header .header_items_burger {
   height: 20%;
   font-weight: bold;
   margin-top: 10%;
+}
+
+.popup.error .popup_title {
+  color: #bd0f27;
+}
+
+.popup.error .popup_message {
+  color: #b60c23;
 }
 
 .popup.active {
@@ -914,7 +927,7 @@ footer .footer_info .mail {
   }
 }
 
-#loading {
+.loading {
   display: none;
   width: 50px;
   height: 50px;
@@ -927,7 +940,13 @@ footer .footer_info .mail {
           animation: spin 1s infinite linear;
 }
 
-#loading.active {
+.loading.submitLoader {
+  margin-top: 0;
+  border: 5px solid #000000;
+  border-top: 6px solid #f3f3f3;
+}
+
+.loading.active {
   display: block;
 }
 

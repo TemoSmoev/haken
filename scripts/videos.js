@@ -21,17 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function getVideos(skip = 0, take = TAKE, clearOldVideos = false) {
+    var notFoundDiv = document.querySelector(".videos_not_found")
+    var moreButton = document.querySelector(".more")
+    var loadingSpinner = document.querySelector(".loading")
+    var categoryId = document.querySelector(".filter_category").value
+    var keyword = document.querySelector(".filter_input").value
     if (clearOldVideos) {
       videosContainer.innerHTML = ""
     }
-    var notFoundDiv = document.querySelector(".videos_not_found")
-    var moreButton = document.querySelector(".more")
-    var loadingSpinner = document.querySelector("#loading")
     hide(notFoundDiv)
     hide(moreButton)
     show(loadingSpinner)
-    var categoryId = document.querySelector(".filter_category").value
-    var keyword = document.querySelector(".filter_input").value
     getVideosAPI(skip, take, categoryId, keyword)
       .then(function (response) {
         return response.json()

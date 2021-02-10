@@ -423,12 +423,16 @@ header {
       padding-top: 10px;
     }
     .submit {
+      display: none;
       border: none;
       outline: none;
       background-color: $light;
       height: 60px;
       font-weight: bold;
       color: $dark;
+      &.active {
+        display: block;
+      }
     }
   }
 }
@@ -484,6 +488,14 @@ header {
     height: 20%;
     font-weight: bold;
     margin-top: 10%;
+  }
+  &.error {
+    .popup_title {
+      color: #bd0f27;
+    }
+    .popup_message {
+      color: #b60c23;
+    }
   }
   &.active {
     display: block;
@@ -786,7 +798,7 @@ footer {
     pointer-events: none;
   }
 }
-#loading {
+.loading {
   display: none;
   width: 50px;
   height: 50px;
@@ -796,8 +808,13 @@ footer {
   margin: auto;
   margin-top: 30px;
   animation: spin 1s infinite linear;
+  &.submitLoader {
+    margin-top: 0;
+    border: 5px solid #000000;
+    border-top: 6px solid #f3f3f3;
+  }
 }
-#loading.active {
+.loading.active {
   display: block;
 }
 @keyframes spin {
