@@ -309,7 +309,7 @@ header .header_items_burger {
 .donation_block {
   width: 49%;
   height: 400px;
-  background-color: #212529;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,9 +343,9 @@ header .header_items_burger {
 
 .donation_block_item:hover {
   cursor: pointer;
-  color: #212529;
+  color: #000000;
   background-color: #fff;
-  border: 2px solid #212529;
+  border: 2px solid #000000;
 }
 
 .videos {
@@ -367,7 +367,7 @@ header .header_items_burger {
 
 .videos .filter_category {
   display: block;
-  background-color: #212529;
+  background-color: #000000;
   color: white;
   width: 100px;
   padding: 5px;
@@ -380,8 +380,8 @@ header .header_items_burger {
   display: block;
   outline: none;
   padding-left: 5px;
-  border: 2px solid #212529;
-  color: #212529;
+  border: 2px solid #000000;
+  color: #000000;
   background-color: transparent;
   height: 35px;
 }
@@ -391,7 +391,7 @@ header .header_items_burger {
   width: 150px;
   border: none;
   outline: none;
-  background-color: #212529;
+  background-color: #000000;
   height: 35px;
   font-weight: bold;
   color: white;
@@ -435,7 +435,7 @@ header .header_items_burger {
   margin: 30px auto 0;
   width: 200px;
   height: 50px;
-  background-color: #212529;
+  background-color: #000000;
   color: white;
   outline: none;
   border: none;
@@ -452,7 +452,7 @@ header .header_items_burger {
 .about {
   padding-top: 50px;
   min-height: 500px;
-  background-color: #212529;
+  background-color: #000000;
 }
 
 .about_wrapper {
@@ -504,7 +504,7 @@ header .header_items_burger {
   padding: 30px;
   width: 100%;
   margin: 0 auto;
-  background-color: #212529;
+  background-color: #000000;
 }
 
 .aplicant_form {
@@ -541,7 +541,7 @@ header .header_items_burger {
   background-color: white;
   height: 60px;
   font-weight: bold;
-  color: #212529;
+  color: #000000;
 }
 
 .aplicant_form .submit.active {
@@ -586,7 +586,7 @@ header .header_items_burger {
 }
 
 .popup_window {
-  border: 3px dashed #212529;
+  border: 3px dashed #000000;
   position: absolute;
   z-index: 4;
   top: 50%;
@@ -608,7 +608,7 @@ header .header_items_burger {
 .popup_button {
   border: none;
   outline: none;
-  background-color: #212529;
+  background-color: #000000;
   color: white;
   width: 30%;
   height: 20%;
@@ -630,7 +630,7 @@ header .header_items_burger {
 
 footer {
   min-height: 90px;
-  background-color: #212529;
+  background-color: #000000;
   color: white;
   font-weight: bold;
   font-size: 14px;
